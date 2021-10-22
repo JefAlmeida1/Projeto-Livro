@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="netflix.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon_io (1)/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="respo.css">
+    <title>Cadastro</title>
+</head>
+<body class="cad1" onload="carregar()">
+    
+    <header>
+        <div class="container">
+            <h1>Cadastro</h1>
+            <nav>
+                <a href="net.html">Inicio</a>
+                <a href="#">Séries</a>
+                <a href="#">Entrar</a>
+                <a href="cadastro.html">Cadastro</a>
+            </nav>
+        </div>
+    </header>
+    <main class="m1">
+        <form class="for" action="http://localhost:8082/" method="post">
+            <div class="cadastro2">
+            <h2>Formulário</h2>
+            <p class="dd1">
+            Preencha o formulário para realizar o seu cadastro e começar a ler os livros.
+            </p>
+            <label class="dd">Nome Completo:</label><p class="dd"><input type="text" name="nome" id="nome"></p>
+
+            <p class="dd">
+                <label>CPF:</label>
+                 <input type="text" name="cpf" id="cpf"> 
+                <label>Data de Nascimento:</label>
+                 <input type="date" name="data" id="data"></p>
+            <p class="dd">
+                <label>E-mail:</label>
+                 <input type="email" name="email" id="email"> 
+                <label>Corfima e-mail:</label>
+                 <input type="email" name="email" id="mail">
+            <p class="dd">
+                <label>Senha: </label>
+                <input type="password" name="sen" id="sen"> 
+                <label>Confirmar Senha:</label>
+                 <input type="password" name="sen" id="sen"></p> 
+            <p class="dd"><input type="radio" name="ter" id="ter">Aceito os Termos de Uso.</p>      
+             <button type="submit" value="enviar formulário" onclick="cadastro()" id="bot">Cadastrar</button>
+            </div>
+        </form>
+    </main>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="javascript/jquery.min.js"></script>
+    <script src="javascript/owl.carousel.min.js"></script>
+</body>
+</html>

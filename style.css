@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+/* o root serve para declarar variavél */
+:root{
+    --vermelho:#E50914;
+    --preta: #141414;
+}
+
+
+/*fazendo desta forma, voce esta deixando padronizado as configurações que foi determinada dentro da "*". */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.container{
+    border: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+header nav a:hover{
+    color: #fff;
+}
+
+/* trabalhando com filme */
+.filme-principal{
+    font-size: 16px;
+    background-image: linear-gradient(rgba(0,0,0,.50)), (rgba(0, 0, 0, .50)100%);
+    background-image: url('imagem/1anjos.jpg');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.titulo{
+    margin-top: 20%;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+
+}
+.botao i{
+    margin-right: 8px;
+}
+.container{
+    margin-left: 20px;
+    
+}
+.filme-principal .container{
+    width: 70%;
+}
+.box-livro{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+    color: black;
+}
+.box-livro:hover{
+    background-color: red;
+    color: white;
+}
+.corrosel-filme{
+    margin-top: 5px;
+}
+
+/* pagina cadastro*/
+.m1{
+    padding: 11px 56px 100px 50px;
+    min-width: 380px;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+.cad1{
+    background-color: black;
+}
+.cadastro2{
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+    width: 100%;
+    min-height: 30rem;
+    border-radius: 10px 10px 10px 10px;
+
+}
+h1{
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+
+}
+input{
+    justify-content:right;
+    margin: 15px;
+    border-color: black;
+    padding: 10px 20px 10px 57px;
+}
+#bot:hover{
+    background-color: rgb(247, 7, 7);
+    color: black;
+}
+#bot{
+    background-color: rgba(247, 7, 7, 0.5);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s;
+}
+.dd{
+    justify-content: left;
+    font-size: 25px;
+    text-align: left;
+    margin: 15px;
+    
+}
+h2{
+    margin: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding: auto;
+}
