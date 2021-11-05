@@ -16,6 +16,7 @@ $('.owl-carousel').owlCarousel({
 })
 
 //Funsão para força o usuario preencher todos os dados
+alert("Bem vindo ao site Livro!")
 function cadastro(){
     let nome1 = document.getElementById('nome')
     let cp = document.getElementById('cpf')
